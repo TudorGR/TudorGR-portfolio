@@ -56,6 +56,7 @@ export const Component = ({
   github,
   deploy,
   live = "true",
+  extension = "false",
 }) => {
   const [mouse, parentRef] = useMouse();
 
@@ -154,6 +155,32 @@ export const Component = ({
               <span className="text">Live Demo</span>
             </a>
           ) : null}
+          {extension == "true" && (
+            <a
+              className="button github"
+              href={
+                "https://marketplace.visualstudio.com/items?itemName=tudorgradinaru.shadcn-component-panel"
+              }
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.29 4.1L17.6 0.41c-.39-.39-1.02-.39-1.41 0L2.29 14.31c-.39.39-.39 1.02 0 1.41l3.9 3.9c.39.39 1.02.39 1.41 0L21.5 5.72c.39-.39.39-1.02-.21-1.62zM7 17.5L4.5 15 16 3.5 18.5 6 7 17.5z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M22.5 9.5h-3c-.28 0-.5.22-.5.5s.22.5.5.5h3c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zM22.5 12.5h-2c-.28 0-.5.22-.5.5s.22.5.5.5h2c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zM22.5 15.5h-1c-.28 0-.5.22-.5.5s.22.5.5.5h1c.28 0 .5-.22.5-.5s-.22-.5-.5-.5z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span className="text">VS Marketplace</span>
+            </a>
+          )}
         </div>
       </div>
     </div>

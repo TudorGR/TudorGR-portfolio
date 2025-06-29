@@ -3,6 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 import tawktalk from "../../assets/tawktalk.jpg";
 import fitnessfabrics from "../../assets/fitnessfabrics.jpg";
 import web from "../../assets/web.jpg";
+import extension from "../../assets/extension.png";
 
 export const Projects = () => {
   return (
@@ -58,6 +59,23 @@ export const Projects = () => {
               live="false"
             >
               <img src={web} alt="" />
+            </Component>
+            <Component
+              description="Developed a VS Code extension that revolutionizes React/Next.js development workflow by providing a visual sidebar with shadcn/ui components."
+              title="shadcn/ui Component Panel - VS Code Extension"
+              skills={[
+                "TypeScript",
+                "VS Code Extension",
+                "React",
+                "Node.js",
+                "Webpack",
+                "UI/UX Design",
+              ]}
+              github="https://github.com/TudorGR/shadcn-component-panel"
+              live="false"
+              extension="true"
+            >
+              <img src={extension} alt="" />
             </Component>
           </div>
         </div>
