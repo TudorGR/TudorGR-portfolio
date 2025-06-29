@@ -1,0 +1,132 @@
+/* Modern Button Styling */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 196, 242, 0.1),
+    rgba(122, 105, 249, 0.1)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  min-width: 120px;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.button:hover::before {
+  left: 100%;
+}
+
+.button .text {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.button svg {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.button svg path {
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(59, 196, 242, 0.2),
+    rgba(122, 105, 249, 0.2)
+  );
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 196, 242, 0.15);
+}
+
+.button:hover .text {
+  color: white;
+}
+
+.button:hover svg {
+  transform: scale(1.1);
+}
+
+.button:hover svg path {
+  fill: white;
+}
+
+.button:active {
+  transform: translateY(0);
+  transition: transform 0.1s ease;
+}
+
+/* Specific styles for GitHub button */
+.button.github:hover {
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Specific styles for Live Demo button */
+.button.live-demo:hover {
+  box-shadow: 0 8px 25px rgba(242, 99, 120, 0.15);
+}
+
+/* Specific styles for LinkedIn button */
+.button.linkedin:hover {
+  box-shadow: 0 8px 25px rgba(14, 118, 168, 0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(14, 118, 168, 0.2),
+    rgba(122, 105, 249, 0.2)
+  );
+}
+
+/* Social media buttons container */
+.social-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.social-buttons .button {
+  flex: 1;
+  max-width: 200px;
+}
+
+@media (max-width: 640px) {
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .social-buttons .button {
+    max-width: none;
+  }
+}

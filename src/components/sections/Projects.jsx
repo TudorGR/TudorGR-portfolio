@@ -1,4 +1,8 @@
+import { Component } from "../animated-card";
 import { RevealOnScroll } from "../RevealOnScroll";
+import tawktalk from "../../assets/tawktalk.jpg";
+import fitnessfabrics from "../../assets/fitnessfabrics.jpg";
+import web from "../../assets/web.jpg";
 
 export const Projects = () => {
   return (
@@ -8,110 +12,53 @@ export const Projects = () => {
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 text-center bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold mb-8 bg-blue-200 text-center bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Cloud Platform</h3>
-              <p className="text-gray-400 mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis voluptatum eligendi esse assumenda?
-              </p>
-              <div className="flex flex-wrap gao-2 mb-4">
-                {["React", "Node.js", "AWS", "Docker"].map((skill, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project(github icon)
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Cloud Platform</h3>
-              <p className="text-gray-400 mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis voluptatum eligendi esse assumenda?
-              </p>
-              <div className="flex flex-wrap gao-2 mb-4">
-                {["React", "Node.js", "AWS", "Docker"].map((skill, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project(github icon)
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Cloud Platform</h3>
-              <p className="text-gray-400 mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis voluptatum eligendi esse assumenda?
-              </p>
-              <div className="flex flex-wrap gao-2 mb-4">
-                {["React", "Node.js", "AWS", "Docker"].map((skill, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project(github icon)
-                </a>
-              </div>
-            </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Cloud Platform</h3>
-              <p className="text-gray-400 mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis voluptatum eligendi esse assumenda?
-              </p>
-              <div className="flex flex-wrap gao-2 mb-4">
-                {["React", "Node.js", "AWS", "Docker"].map((skill, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project(github icon)
-                </a>
-              </div>
-            </div>
+            <Component
+              description="Developed TawkTalk, a full-stack real-time chat application using modern web technologies. This project demonstrates my proficiency in both frontend and backend development, with a focus on real-time communication features."
+              title="Real-time Chat Application"
+              skills={[
+                "React",
+                "TailwindCSS",
+                "Zustand",
+                "Node.js",
+                "Express",
+                "MongoDB",
+              ]}
+              github="https://github.com/TudorGR/TawkTalk"
+              deploy="https://tawktalk.onrender.com/"
+            >
+              <img src={tawktalk} alt="" />
+            </Component>
+            <Component
+              description="Developed a comprehensive eCommerce platform specializing in fitness apparel and accessories using the MERN stack (MongoDB, Express.js, React.js, Node.js). This full-stack application features both customer-facing functionality and a complete admin management system."
+              title="Full-Stack eCommerce Platform"
+              skills={[
+                "React",
+                "TailwindCSS",
+                "Vite",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Cloudinary",
+                "Vercel",
+              ]}
+              github="https://github.com/TudorGR/fitness-fabrics"
+              deploy="https://fitness-fabrics.vercel.app/"
+            >
+              <img src={fitnessfabrics} alt="" />
+            </Component>
+            <Component
+              description="Developed a comprehensive web-based educational platform designed to help high school students learn programming through interactive problem-solving. The platform facilitates collaboration between teachers and students."
+              title="Web Technologies Educational Programming Platform"
+              skills={["HTML", "CSS", "JavaScript", "Node.js", "SQLite3"]}
+              github="https://github.com/TudorGR/Proiect-Tehnologii-Web"
+              live="false"
+            >
+              <img src={web} alt="" />
+            </Component>
           </div>
         </div>
       </RevealOnScroll>
