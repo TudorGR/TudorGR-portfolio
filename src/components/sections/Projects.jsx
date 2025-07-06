@@ -4,6 +4,7 @@ import tawktalk from "../../assets/tawktalk.jpg";
 import fitnessfabrics from "../../assets/fitnessfabrics.jpg";
 import web from "../../assets/web.jpg";
 import extension from "../../assets/extension.png";
+import calendariq from "../../assets/calendariq.png";
 
 export const Projects = () => {
   return (
@@ -17,6 +18,23 @@ export const Projects = () => {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Component
+              description={`Developed an intelligent calendar application as my bachelor's thesis at Universitatea „Alexandru Ioan Cuza" din Iași (UAIC). The project combines traditional calendar functionality with cutting-edge AI capabilities to revolutionize personal scheduling and event management.`}
+              title="CalendarIQ - AI-Powered Calendar"
+              skills={[
+                "React",
+                "TailwindCSS",
+                "AI",
+                "NLP",
+                "Node.js",
+                "Express",
+                "MySQL",
+              ]}
+              github="https://github.com/TudorGR/licenta-project"
+              live="false"
+            >
+              <img src={calendariq} alt="" />
+            </Component>
             <Component
               description="Developed TawkTalk, a full-stack real-time chat application using modern web technologies. This project demonstrates my proficiency in both frontend and backend development, with a focus on real-time communication features."
               title="Real-time Chat Application"
