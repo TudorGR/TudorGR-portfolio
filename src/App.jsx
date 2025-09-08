@@ -7,7 +7,6 @@ import { Home } from "./components/sections/Home";
 import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/Contact";
-import { HeroHeader, HeroSection } from "./components/hero-section-1";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { Noise } from "@/components/ui/noise";
 
@@ -31,9 +30,12 @@ function App() {
           />
         </div>
 
+        {/* Navigation */}
+        <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
         {/* Content with relative positioning to stay above noise */}
         <div className="relative z-10">
-          <HeroHeader />
           <Home />
           <About />
           <Projects />
