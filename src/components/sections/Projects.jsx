@@ -77,9 +77,9 @@ export const Projects = () => {
 
   return (
     <section id="projects" className="min-h-screen py-20 px-4">
-      <RevealOnScroll>
-        <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <RevealOnScroll>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
@@ -91,14 +91,13 @@ export const Projects = () => {
               development
             </p>
           </div>
+        </RevealOnScroll>
 
-          {/* Featured Projects */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
-            {featuredProjects.map((project, index) => (
-              <div
-                key={index}
-                className="group bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/10"
-              >
+        {/* Featured Projects */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          {featuredProjects.map((project, index) => (
+            <RevealOnScroll key={index}>
+              <div className="group bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/10">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
@@ -171,23 +170,24 @@ export const Projects = () => {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </RevealOnScroll>
+          ))}
+        </div>
 
-          {/* Other Projects */}
+        {/* Other Projects */}
+        <RevealOnScroll>
           <div className="text-center mb-8">
             <h3 className="text-2xl font-semibold text-white mb-4">
               Other Projects
             </h3>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full mx-auto"></div>
           </div>
+        </RevealOnScroll>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {otherProjects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-white/5 backdrop-blur-lg rounded-xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-300 group"
-              >
+        <div className="grid md:grid-cols-2 gap-6">
+          {otherProjects.map((project, index) => (
+            <RevealOnScroll key={index}>
+              <div className="bg-white/5 backdrop-blur-lg rounded-xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-300 group">
                 <div className="relative overflow-hidden h-80">
                   <img
                     src={project.image}
@@ -262,10 +262,10 @@ export const Projects = () => {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </RevealOnScroll>
+          ))}
         </div>
-      </RevealOnScroll>
+      </div>
     </section>
   );
 };

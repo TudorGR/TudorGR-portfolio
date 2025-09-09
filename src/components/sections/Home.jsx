@@ -31,7 +31,7 @@ export const Home = () => {
 
           {/* Dynamic subtitle */}
           <div className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-8 h-20 flex items-center justify-center">
-            <span className="text-gray-300 mr-4">I build</span>
+            <span className="text-gray-300 mr-4 text-nowrap">I build</span>
             <Typewriter
               text={[
                 "modern React apps",
