@@ -4,6 +4,7 @@ import AvatarGroup from "../avatar-group";
 import meta from "../../assets/meta.jpg";
 import fcc from "../../assets/fcc.png";
 import fii from "../../assets/fii.png";
+import { useState } from "react";
 
 export const About = () => {
   const frontendSkills = [
@@ -17,6 +18,14 @@ export const About = () => {
   ];
   const backendSkills = ["Node.js", "Express.js", "MongoDB", "MySQL", "Python"];
 
+  const [showMore, setShowMore] = useState(false);
+
+  const fullText =
+    "My journey in web development began during my university studies, where I discovered my passion for creating digital solutions. What started as curiosity quickly evolved into a professional pursuit as I delved deeper into JavaScript and its ecosystem. My graduation project (completed in 2025) allowed me to apply theoretical knowledge to real-world challenges, solidifying my commitment to this field.";
+
+  const truncatedText =
+    "My journey in web development began during my university studies, where I discovered my passion for creating digital solutions.";
+
   return (
     <section
       id="about"
@@ -29,20 +38,26 @@ export const About = () => {
           </h2>
           <div className="bg-neutral-900/50 rounded-[19px] p-8 border-white/10 border  hover:scale-[1.01] active:scale-90 transition-all">
             <h2></h2>
-            <p className="text-justify text-gray-400 text-md sm:text-lg mb-6">
+            <p className=" text-gray-400 text-md mb-6">
               I'm a passionate web developer specializing in creating dynamic,
               interactive applications using modern JavaScript technologies.
               With a strong foundation in full-stack development, I bring ideas
               to life through clean code and intuitive user experiences.
             </p>
-            <p className="text-justify text-gray-400 text-md sm:text-lg mb-6">
-              My journey in web development began during my university studies,
-              where I discovered my passion for creating digital solutions. What
-              started as curiosity quickly evolved into a professional pursuit
-              as I delved deeper into JavaScript and its ecosystem. My
-              graduation project (completed in 2025) allowed me to apply
-              theoretical knowledge to real-world challenges, solidifying my
-              commitment to this field.
+            <p className="text-gray-400 text-md mb-6">
+              {/* Show full text on medium screens and up */}
+              <span className="hidden md:inline">{fullText}</span>
+
+              {/* Show truncated text with see more button on small screens */}
+              <span className="md:hidden">
+                {showMore ? fullText : truncatedText}
+                <button
+                  onClick={() => setShowMore(!showMore)}
+                  className="text-blue-400 cursor-pointer hover:text-blue-300 ml-1 underline transition-colors"
+                >
+                  {showMore ? "see less" : "see more"}
+                </button>
+              </span>
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-[19px] p-6  hover:scale-[1.01] active:scale-90 transition-all relative overflow-hidden bg-neutral-900/50 border border-white/10">
@@ -116,12 +131,12 @@ export const About = () => {
                 />
               </div>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li className="text-justify text-gray-400 text-md sm:text-lg">
+                <li className=" text-gray-400 text-md">
                   <strong>B.S. in Computer Science</strong> - University
                   "Alexandru Ioan Cuza" of Iasi, Faculty of Computer Science
                   (2022-2025)
                 </li>
-                <li className="text-justify text-gray-400 text-md sm:text-lg">
+                <li className=" text-gray-400 text-md">
                   <strong>Relevant Coursework:</strong> Web Technologies,
                   Practice – Introduction to Programming, Advanced Programming,
                   Software Engineering, DBMS Practice & Databases, Computer
@@ -158,7 +173,7 @@ export const About = () => {
                   size="md"
                 />
               </div>
-              <ul className="list-disc list-inside  space-y-2">
+              <ul className="list-disc list-inside text-md space-y-2">
                 <li>
                   <span className="text-gray-400 font-semibold">
                     Meta Front-End Developer Specialization

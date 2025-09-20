@@ -1,5 +1,5 @@
 "use client";
-import { ArrowUpRightIcon } from "lucide-react";
+import { ArrowUpRightIcon, Github, ExternalLink, Code } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
@@ -100,7 +100,7 @@ export const Component = ({
       )}
       <div className="relative px-4 pb-2 pt-4 flex flex-col justify-between">
         <h3 className="text-lg font-semibold pb-2 text-neutral-300">{title}</h3>
-        <div className="flex flex-row flex-wrap gap-1">
+        <div className="flex flex-row flex-wrap gap-2 mr-6">
           {skills.map((skill, key) => (
             <span
               key={key}
@@ -113,45 +113,12 @@ export const Component = ({
         <p className="my-2  text-neutral-400">{description}</p>
         <div className="flex justify-between items-end gap-3">
           <a className="button github" href={github}>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
-                fill="currentColor"
-              />
-            </svg>
+            <Github size={20} />
             <span className="text">View Code</span>
           </a>
           {live == "true" ? (
             <a className="button live-demo" href={deploy}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <g id="SVGRepo_bgCarrier" strokeWidth="0" />
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M7 17L17 7M17 7H8M17 7V16"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </g>
-              </svg>
+              <ExternalLink size={20} />
               <span className="text">Live Demo</span>
             </a>
           ) : null}
@@ -162,22 +129,7 @@ export const Component = ({
                 "https://marketplace.visualstudio.com/items?itemName=tudorgradinaru.shadcn-component-panel"
               }
             >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21.29 4.1L17.6 0.41c-.39-.39-1.02-.39-1.41 0L2.29 14.31c-.39.39-.39 1.02 0 1.41l3.9 3.9c.39.39 1.02.39 1.41 0L21.5 5.72c.39-.39.39-1.02-.21-1.62zM7 17.5L4.5 15 16 3.5 18.5 6 7 17.5z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M22.5 9.5h-3c-.28 0-.5.22-.5.5s.22.5.5.5h3c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zM22.5 12.5h-2c-.28 0-.5.22-.5.5s.22.5.5.5h2c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zM22.5 15.5h-1c-.28 0-.5.22-.5.5s.22.5.5.5h1c.28 0 .5-.22.5-.5s-.22-.5-.5-.5z"
-                  fill="currentColor"
-                />
-              </svg>
+              <Code size={20} />
               <span className="text">VS Marketplace</span>
             </a>
           )}

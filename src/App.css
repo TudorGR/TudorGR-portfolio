@@ -71,49 +71,19 @@
   box-shadow: 0 8px 25px rgba(59, 196, 242, 0.15);
 }
 
-.button:hover .text {
-  color: white;
-}
-
-.button:hover svg {
-  transform: scale(1.1);
-}
-
-.button:hover svg path {
-  fill: white;
-}
-
 .button:active {
   transform: translateY(0);
   transition: transform 0.1s ease;
 }
 
-/* Specific styles for GitHub button */
-.button.github:hover {
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
-}
-
-/* Specific styles for Live Demo button */
-.button.live-demo:hover {
-  box-shadow: 0 8px 25px rgba(242, 99, 120, 0.15);
-}
-
 /* Specific styles for LinkedIn button */
-.button.linkedin:hover {
-  box-shadow: 0 8px 25px rgba(14, 118, 168, 0.25);
-  background: linear-gradient(
-    135deg,
-    rgba(14, 118, 168, 0.2),
-    rgba(122, 105, 249, 0.2)
-  );
-}
 
 /* Social media buttons container */
 .social-buttons {
   display: flex;
-  gap: 12px;
+  gap: 20px;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .social-buttons .button {

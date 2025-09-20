@@ -5,6 +5,7 @@ import fitnessfabrics from "../../assets/fitnessfabrics.jpg";
 import web from "../../assets/web.jpg";
 import extension from "../../assets/extension.png";
 import calendariq from "../../assets/calendariq.png";
+import cartify from "../../assets/cartify.png";
 
 export const Projects = () => {
   return (
@@ -36,8 +37,24 @@ export const Projects = () => {
               <img src={calendariq} alt="" />
             </Component>
             <Component
+              description="A modern, responsive e-commerce platform showcasing professional React development patterns, smooth animations, and optimized user experience. Built to demonstrate frontend engineering skills with performance optimizations, accessibility features, and clean architecture."
+              title="Cartify - Modern E-commerce Platform"
+              skills={[
+                "React",
+                "TypeScript",
+                "Vite",
+                "TailwindCSS",
+                "Framer Motion",
+                "React Router",
+              ]}
+              github="https://github.com/TudorGR/Cartify"
+              deploy="https://cartify-neon.vercel.app/"
+            >
+              <img src={cartify} alt="Cartify E-commerce Platform" />
+            </Component>
+            <Component
               description="Developed TawkTalk, a full-stack real-time chat application using modern web technologies. This project demonstrates my proficiency in both frontend and backend development, with a focus on real-time communication features."
-              title="Real-time Chat Application"
+              title="TawkTalk - Real-time Chat Application"
               skills={[
                 "React",
                 "TailwindCSS",
@@ -49,51 +66,17 @@ export const Projects = () => {
               github="https://github.com/TudorGR/TawkTalk"
               deploy="https://tawktalk.onrender.com/"
             >
-              <img src={tawktalk} alt="" />
+              <img src={tawktalk} alt="TawkTalk" />
             </Component>
-            <Component
-              description="Developed a comprehensive eCommerce platform specializing in fitness apparel and accessories using the MERN stack (MongoDB, Express.js, React.js, Node.js). This full-stack application features both customer-facing functionality and a complete admin management system."
-              title="Full-Stack eCommerce Platform"
-              skills={[
-                "React",
-                "TailwindCSS",
-                "Vite",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Cloudinary",
-                "Vercel",
-              ]}
-              github="https://github.com/TudorGR/fitness-fabrics"
-              deploy="https://fitness-fabrics.vercel.app/"
-            >
-              <img src={fitnessfabrics} alt="" />
-            </Component>
+
             <Component
               description="Developed a comprehensive web-based educational platform designed to help high school students learn programming through interactive problem-solving. The platform facilitates collaboration between teachers and students."
-              title="Web Technologies Educational Programming Platform"
+              title="Educational Programming Platform"
               skills={["HTML", "CSS", "JavaScript", "Node.js", "SQLite3"]}
               github="https://github.com/TudorGR/Proiect-Tehnologii-Web"
               live="false"
             >
-              <img src={web} alt="" />
-            </Component>
-            <Component
-              description="Developed a VS Code extension that revolutionizes React/Next.js development workflow by providing a visual sidebar with shadcn/ui components."
-              title="shadcn/ui Component Panel - VS Code Extension"
-              skills={[
-                "TypeScript",
-                "VS Code Extension",
-                "React",
-                "Node.js",
-                "Webpack",
-                "UI/UX Design",
-              ]}
-              github="https://github.com/TudorGR/shadcn-component-panel"
-              live="false"
-              extension="true"
-            >
-              <img src={extension} alt="" />
+              <img src={web} alt="Educational Platform" />
             </Component>
           </div>
         </div>

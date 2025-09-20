@@ -28,7 +28,7 @@ export const Home = () => {
               className="text-3xl md:text-5xl font-bold"
             />
           </h1>
-          <p className="text-justify text-gray-400 text-md my-8 max-w-xl mx-auto">
+          <p className="text-center text-gray-400 text-md my-8 max-w-xl mx-auto">
             I'm a web developer specializing in JavaScript-based applications
             with a focus on creating responsive, interactive user experiences.
             My expertise lies in developing full-stack web applications using
