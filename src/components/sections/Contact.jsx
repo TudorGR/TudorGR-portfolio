@@ -1,6 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 import CV from "../../assets/CV_GRADINARU_TUDOR.pdf";
+import { Magnetic } from "../ui/magnetic";
 
 export const Contact = () => {
   return (
@@ -15,46 +16,53 @@ export const Contact = () => {
           </h2>
 
           <div className="social-buttons">
-            <a
-              href="https://github.com/TudorGR"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" flex-1 github py-3 px-6 rounded font-medium border border-blue-200 text-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex items-center justify-center gap-2"
-            >
-              <Github size={20} />
-              <span className="text">GitHub</span>
-            </a>
+            <Magnetic>
+              <a
+                href="https://github.com/TudorGR"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" flex-1 github py-3 px-6 rounded font-medium border border-blue-200 text-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex items-center justify-center gap-2"
+              >
+                <Github size={20} />
+                <span className="text">GitHub</span>
+              </a>
+            </Magnetic>
 
-            <a
-              href="https://www.linkedin.com/in/tudor-gradinaru"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="linkedin  flex-1 py-3 px-6 rounded font-medium border border-blue-200 text-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex items-center justify-center gap-2"
-            >
-              <Linkedin size={20} />
-              <span className="text">LinkedIn</span>
-            </a>
+            <Magnetic>
+              <a
+                href="https://www.linkedin.com/in/tudor-gradinaru"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkedin  flex-1 py-3 px-6 rounded font-medium border border-blue-200 text-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex items-center justify-center gap-2"
+              >
+                <Linkedin size={20} />
+                <span className="text">LinkedIn</span>
+              </a>
+            </Magnetic>
           </div>
           <div className="social-buttons">
-            <a
-              href="mailto:graditudor@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" flex-1 github py-3 px-6 rounded font-medium border border-blue-200 text-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex items-center justify-center gap-2"
-            >
-              <Mail size={20} />
-              <span className="text">Email</span>
-            </a>
-
-            <a
-              href={CV}
-              download
-              rel="noopener noreferrer"
-              className="linkedin  flex-1 py-3 px-6 rounded font-medium  bg-blue-200 text-black transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2"
-            >
-              <Download size={20} />
-              <span className="text">Download Resume</span>
-            </a>
+            <Magnetic>
+              <a
+                href="mailto:graditudor@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" flex-1 github py-3 px-6 rounded font-medium border border-blue-200 text-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex items-center justify-center gap-2"
+              >
+                <Mail size={20} />
+                <span className="text">Email</span>
+              </a>
+            </Magnetic>
+            <Magnetic>
+              <a
+                href={CV}
+                download
+                rel="noopener noreferrer"
+                className="linkedin  flex-1 py-3 px-6 rounded font-medium  bg-blue-200 text-black transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2"
+              >
+                <Download size={20} />
+                <span className="text">Download Resume</span>
+              </a>
+            </Magnetic>
           </div>
         </div>
       </section>
