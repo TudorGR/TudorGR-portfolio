@@ -1,6 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import CV from "../../assets/CV_GRADINARU_TUDOR.pdf";
+import CV from "../../assets/TUDOR_GRADINARU_CV.pdf";
 import { Magnetic } from "../ui/magnetic";
 
 export const Contact = () => {
