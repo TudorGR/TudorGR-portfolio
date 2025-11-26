@@ -33,18 +33,18 @@ export const About = () => {
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4 ">
-          <h2 className="text-3xl font-bold mb-8 bg-blue-200 text-center bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold mb-8 bg-blue-700/10 text-center bg-clip-text text-neutral-900">
             About Me
           </h2>
-          <div className="bg-neutral-900/50 rounded-[19px] p-8 border-white/10 border  hover:scale-[1.01] active:scale-90 transition-all">
+          <div className=" rounded-2xl p-8 border border-neutral-200 hover:scale-[1.01] active:scale-90 transition-all shadow-lg">
             <h2></h2>
-            <p className=" text-gray-400 text-md mb-6">
+            <p className=" text-gray-800 text-md mb-6">
               I'm a passionate web developer specializing in creating dynamic,
               interactive applications using modern JavaScript technologies.
               With a strong foundation in full-stack development, I bring ideas
               to life through clean code and intuitive user experiences.
             </p>
-            <p className="text-gray-400 text-md mb-6">
+            <p className="text-gray-800 text-md mb-6">
               {/* Show full text on medium screens and up */}
               <span className="hidden md:inline">{fullText}</span>
 
@@ -60,7 +60,7 @@ export const About = () => {
               </span>
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-[19px] p-6  hover:scale-[1.01] active:scale-90 transition-all relative overflow-hidden bg-neutral-900/50 border border-white/10">
+              <div className="rounded-2xl p-6 hover:scale-[1.01] active:scale-90 transition-all relative overflow-hidden bg-white border border-neutral-200 shadow-md">
                 <div
                   className="absolute inset-0 opacity-10"
                   style={{
@@ -70,14 +70,14 @@ export const About = () => {
                   }}
                 />
                 <div className="relative z-10">
-                  <h3 className="text-xl text-blue-200 font-bold mb-4 ">
+                  <h3 className="text-xl text-blue-700 font-bold mb-4 ">
                     Frontend
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {frontendSkills.map((skill, key) => (
                       <span
                         key={key}
-                        className="bg-blue-500/10 text-blue-200 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
+                        className="bg-blue-700/10 text-blue-700 py-1 px-3 rounded-full text-sm hover:bg-blue-700/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.08)] transition-all"
                       >
                         {skill}
                       </span>
@@ -85,7 +85,7 @@ export const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-[19px] p-6 hover:-translate-y-1 transition-all relative overflow-hidden bg-neutral-900/50 border border-white/10">
+              <div className="rounded-2xl p-6 hover:-translate-y-1 transition-all relative overflow-hidden bg-white border border-neutral-200 shadow-md">
                 <div
                   className="absolute inset-0 opacity-10"
                   style={{
@@ -95,14 +95,14 @@ export const About = () => {
                   }}
                 />
                 <div className="relative z-10">
-                  <h3 className="text-xl font-bold mb-4 text-blue-200">
+                  <h3 className="text-xl font-bold mb-4 text-blue-700">
                     Backend
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {backendSkills.map((skill, key) => (
                       <span
                         key={key}
-                        className="bg-blue-500/10 text-blue-200 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
+                        className="bg-blue-700/10 text-blue-700 py-1 px-3 rounded-full text-sm hover:bg-blue-700/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.08)] transition-all"
                       >
                         {skill}
                       </span>
@@ -113,9 +113,9 @@ export const About = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="bg-neutral-900/50 p-6 rounded-[19px] border-white/10 border  hover:scale-[1.01] active:scale-90 transition-all">
+            <div className="bg-white p-6 rounded-2xl border border-neutral-200 hover:scale-[1.01] active:scale-90 transition-all shadow-md">
               <div className="flex flex-row justify-between">
-                <h3 className="text-xl font-bold text-blue-200 mb-4">
+                <h3 className="text-xl font-bold text-blue-700 mb-4">
                   Education
                 </h3>
                 <AvatarGroup
@@ -130,13 +130,13 @@ export const About = () => {
                   size="md"
                 />
               </div>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li className=" text-gray-400 text-md">
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li className=" text-gray-800 text-md">
                   <strong>B.S. in Computer Science</strong> - University
                   "Alexandru Ioan Cuza" of Iasi, Faculty of Computer Science
                   (2022-2025)
                 </li>
-                <li className=" text-gray-400 text-md">
+                <li className=" text-gray-800 text-md">
                   <strong>Relevant Coursework:</strong> Web Technologies,
                   Practice – Introduction to Programming, Advanced Programming,
                   Software Engineering, DBMS Practice & Databases, Computer
@@ -144,9 +144,9 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="bg-neutral-900/50 p-6 rounded-[19px] border-white/10 border hover:scale-[1.01] active:scale-90 transition-all">
-              <div className="flex justify-between">
-                <h3 className="text-xl text-blue-200 font-bold mb-4">
+            <div className="bg-white p-6 rounded-2xl border border-neutral-200 hover:scale-[1.01] active:scale-90 transition-all shadow-md">
+              <div className="flex flex-row justify-between">
+                <h3 className="text-xl font-bold text-blue-700 mb-4">
                   Licenses & certifications
                 </h3>
                 <AvatarGroup
@@ -175,22 +175,22 @@ export const About = () => {
               </div>
               <ul className="list-disc list-inside text-md space-y-2">
                 <li>
-                  <span className="text-gray-400 font-semibold">
+                  <span className="text-gray-800 font-semibold">
                     Meta Front-End Developer Specialization
                   </span>
-                  <p className="ml-6 text-gray-500">Meta</p>
+                  <p className="ml-6 text-gray-600">Meta</p>
                 </li>
                 <li>
-                  <span className="text-gray-400 font-semibold">
+                  <span className="text-gray-800 font-semibold">
                     JavaScript Algorithms and Data Structures
                   </span>
-                  <p className="ml-6 text-gray-500">freeCodeCamp</p>
+                  <p className="ml-6 text-gray-600">freeCodeCamp</p>
                 </li>
                 <li>
-                  <span className="text-gray-400 font-semibold">
+                  <span className="text-gray-800 font-semibold">
                     Responsive Web Design
                   </span>
-                  <p className="ml-6 text-gray-500">freeCodeCamp</p>
+                  <p className="ml-6 text-gray-600">freeCodeCamp</p>
                 </li>
               </ul>
             </div>

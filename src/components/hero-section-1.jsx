@@ -103,10 +103,10 @@ export function HeroSection() {
                     </div>
                   </a>
 
-                  <h1 className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+                  <h1 className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem] font-extrabold text-neutral-900 drop-shadow-[0_2px_8px_rgba(0,0,0,0.10)]">
                     Modern Solutions for Customer Engagement
                   </h1>
-                  <p className="mx-auto mt-8 max-w-2xl text-balance text-lg">
+                  <p className="mx-auto mt-8 max-w-2xl text-balance text-lg text-neutral-700 font-medium drop-shadow-[0_1px_4px_rgba(0,0,0,0.08)]">
                     Highly customizable components for building modern websites
                     and applications that look and feel the way you mean it.
                   </p>
@@ -126,26 +126,20 @@ export function HeroSection() {
                   }}
                   className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
                 >
-                  <div
-                    key={1}
-                    className="bg-foreground/10 rounded-[14px] border p-0.5"
-                  >
-                    <Button
-                      asChild
-                      size="lg"
-                      className="rounded-xl px-5 text-base"
-                    >
-                      <a href="#a">
-                        <span className="text-nowrap">Start Building</span>
-                      </a>
-                    </Button>
-                  </div>
                   <Button
-                    key={2}
                     asChild
                     size="lg"
-                    variant="ghost"
-                    className="h-10.5 rounded-xl px-5"
+                    className="rounded-2xl px-8 text-base font-semibold shadow-lg"
+                  >
+                    <a href="#a">
+                      <span className="text-nowrap">Start Building</span>
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="secondary"
+                    className="rounded-2xl px-8 text-base font-semibold shadow-lg"
                   >
                     <a href="#a">
                       <span className="text-nowrap">Request a demo</span>

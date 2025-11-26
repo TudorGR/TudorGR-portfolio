@@ -8,10 +8,10 @@ export const Contact = () => {
     <RevealOnScroll>
       <section
         id="contact"
-        className="min-h-screen w-full flex items-center justify-center py-20"
+        className="min-h-screen w-full flex items-center justify-center py-20 bg-white"
       >
         <div className="px-4 w-full sm:w-150">
-          <h2 className="text-3xl font-bold mb-8 bg-blue-200 text-center bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold mb-8 bg-black/10 text-center bg-clip-text text-neutral-900">
             Get In Touch
           </h2>
 
@@ -21,7 +21,7 @@ export const Contact = () => {
                 href="https://github.com/TudorGR"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex-1 github py-3 px-6 rounded font-medium border border-blue-200 text-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex items-center justify-center gap-2"
+                className="flex-1 py-3 px-6 rounded-xl font-semibold border border-black bg-black text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-black flex items-center justify-center gap-2"
               >
                 <Github size={20} />
                 <span className="text">GitHub</span>
@@ -33,7 +33,7 @@ export const Contact = () => {
                 href="https://www.linkedin.com/in/tudor-gradinaru"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="linkedin  flex-1 py-3 px-6 rounded font-medium border border-blue-200 text-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex items-center justify-center gap-2"
+                className="flex-1 py-3 px-6 rounded-xl font-semibold border border-black bg-black text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-black flex items-center justify-center gap-2"
               >
                 <Linkedin size={20} />
                 <span className="text">LinkedIn</span>
@@ -46,7 +46,7 @@ export const Contact = () => {
                 href="mailto:graditudor@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex-1 github py-3 px-6 rounded font-medium border border-blue-200 text-blue-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex items-center justify-center gap-2"
+                className="flex-1 py-3 px-6 rounded-xl font-semibold border border-black bg-black text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-black flex items-center justify-center gap-2"
               >
                 <Mail size={20} />
                 <span className="text">Email</span>
@@ -57,7 +57,7 @@ export const Contact = () => {
                 href={CV}
                 download
                 rel="noopener noreferrer"
-                className="linkedin  flex-1 py-3 px-6 rounded font-medium  bg-blue-200 text-black transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2"
+                className="flex-1 py-3 px-6 rounded-xl font-semibold border border-black bg-black text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-black flex items-center justify-center gap-2"
               >
                 <Download size={20} />
                 <span className="text">Download Resume</span>

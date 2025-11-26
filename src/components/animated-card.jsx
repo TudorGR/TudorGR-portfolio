@@ -62,7 +62,7 @@ export const Component = ({
 
   return (
     <div
-      className="group relative transform-gpu overflow-hidden rounded-[20px] bg-black p-2 transition-transform hover:scale-[1.01] active:scale-90"
+      className="group relative transform-gpu overflow-hidden rounded-[20px] bg-white p-2 border border-neutral-200 transition-transform hover:scale-[1.01] active:scale-90 shadow"
       ref={parentRef}
     >
       {withArrow && (
@@ -87,11 +87,11 @@ export const Component = ({
             "linear-gradient(135deg, #3BC4F2, #7A69F9,#F26378,#F5833F)",
         }}
       />
-      <div className="border-white/10 border absolute inset-px rounded-[19px]  bg-neutral-900/50" />
+      <div className="border-neutral-200 border absolute inset-px rounded-[19px] bg-white/80" />
       {children && (
         <div
           className={cn(
-            "gird relative h-40 place-content-center overflow-hidden rounded-[15px]  border-neutral-950 bg-black/50",
+            "gird relative h-40 place-content-center overflow-hidden rounded-[15px] border border-neutral-200 bg-white/70",
             className
           )}
         >
@@ -99,32 +99,38 @@ export const Component = ({
         </div>
       )}
       <div className="relative px-4 pb-2 pt-4 flex flex-col justify-between">
-        <h3 className="text-lg font-semibold pb-2 text-neutral-300">{title}</h3>
+        <h3 className="text-lg font-semibold pb-2 text-neutral-900">{title}</h3>
         <div className="flex flex-row flex-wrap gap-2 mr-6">
           {skills.map((skill, key) => (
             <span
               key={key}
-              className=" bg-blue-500/10 text-blue-200 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20  transition-all"
+              className="bg-blue-700/10 text-blue-700 py-1 px-3 rounded-full text-sm hover:bg-blue-700/20 transition-all"
             >
               {skill}
             </span>
           ))}
         </div>
-        <p className="my-2  text-neutral-400">{description}</p>
+        <p className="my-2 text-gray-700">{description}</p>
         <div className="flex justify-between items-end gap-3">
-          <a className="button github" href={github}>
+          <a
+            className="button github text-blue-700 border border-blue-700 bg-white hover:bg-blue-50 transition"
+            href={github}
+          >
             <Github size={20} />
-            <span className="text">View Code</span>
+            <span className="text ">View Code</span>
           </a>
           {live == "true" ? (
-            <a className="button live-demo" href={deploy}>
+            <a
+              className="button live-demo text-white border border-blue-700 bg-blue-700 hover:bg-blue-800 transition"
+              href={deploy}
+            >
               <ExternalLink size={20} />
               <span className="text">Live Demo</span>
             </a>
           ) : null}
           {extension == "true" && (
             <a
-              className="button github"
+              className="button github text-blue-700 border border-blue-700 bg-white hover:bg-blue-50 transition"
               href={
                 "https://marketplace.visualstudio.com/items?itemName=tudorgradinaru.shadcn-component-panel"
               }

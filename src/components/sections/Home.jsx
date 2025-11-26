@@ -6,15 +6,15 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative "
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
-          <h1 className="text-3xl md:text-5xl font-bold  bg-blue-200 bg-clip-text text-transparent leading-right">
+          <h1 className="text-3xl md:text-5xl font-bold text-neutral-900 leading-tight">
             Hi, I'm Tudor
           </h1>
 
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 bg-blue-200 bg-clip-text text-transparent leading-right">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-neutral-900 leading-tight">
             I build{" "}
             <Typewriter
               text={[
@@ -25,10 +25,10 @@ export const Home = () => {
               ]}
               speed={75}
               loop={true}
-              className="text-3xl md:text-5xl font-bold"
+              className="text-3xl md:text-5xl font-bold text-neutral-900"
             />
           </h1>
-          <p className="text-center text-gray-400 text-md my-8 max-w-xl mx-auto">
+          <p className="text-center text-gray-800 text-md my-8 max-w-xl mx-auto">
             I'm a web developer specializing in JavaScript-based applications
             with a focus on creating responsive, interactive user experiences.
             My expertise lies in developing full-stack web applications using
@@ -38,7 +38,7 @@ export const Home = () => {
             <Magnetic>
               <a
                 href="#projects"
-                className="bg-blue-200 text-black py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] text-nowrap"
+                className="bg-black text-white py-3 px-6 rounded-xl font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-lg text-nowrap border border-black"
               >
                 View Projects
               </a>
@@ -46,7 +46,7 @@ export const Home = () => {
             <Magnetic>
               <a
                 href="#contact"
-                className="border border-blue-200 text-blue-200 py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 text-nowrap"
+                className="text-black py-3 px-6 rounded-xl font-semibold border border-black transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg text-nowrap "
               >
                 Contact Me
               </a>
