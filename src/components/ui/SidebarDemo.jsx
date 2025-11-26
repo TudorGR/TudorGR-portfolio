@@ -7,6 +7,7 @@ import {
   Mail,
   Star,
   UserRound,
+  Building2,
 } from "lucide-react";
 import { Home } from "../sections/Home";
 import { About } from "../sections/About";
@@ -32,6 +33,13 @@ export function SidebarDemo() {
       href: "#about",
       icon: (
         <User2 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Experience",
+      href: "#experience",
+      icon: (
+        <Building2 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
